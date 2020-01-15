@@ -12,7 +12,16 @@ class AdivinaNums {
 	
 	//invoco el método de obtención de variable por teclado
 	Scanner teclado = new Scanner( System.in );
-	//invoco un bucle de obtención de número positivo para la variable acierto
+	System.out.println("Introduce el número de aciertos");
+	acierto = teclado.nextInt();
+	NumsPosi numeroPositivo1=new NumsPosi();
+	numeroPostivo1.setAcierto(acierto);
+	System.out.println("Introduce el número de segundos");
+	segundos = teclado.nextInt();
+	NumsPosi numeroPositivo2=new NumsPosi();
+	numeroPostivo2.setSegundos(segundos);
+	
+	/**invoco un bucle de obtención de número positivo para la variable acierto
 	do	{
 		System.out.println("Introduce el número de aciertos");
 		acierto = teclado.nextInt();
@@ -27,7 +36,7 @@ class AdivinaNums {
 				if (!segundosV)
 			System.out.println("Error, intentalo otra vez\n");
 		}while (!segundosV); //fin repetir-mientras
-	
+	*/
 		
 
 	}
