@@ -14,11 +14,11 @@ class AdivinaNums {
 	Scanner teclado = new Scanner( System.in );
 	System.out.println("Introduce el número de aciertos");
 	acierto = teclado.nextInt();
-	NumsPosi numeroPositivo1=new NumsPosi();
+	NumsPosi numeroPositivo1=new NumsPosi(acierto);
 	numeroPostivo1.setAcierto(acierto);
 	System.out.println("Introduce el número de segundos");
 	segundos = teclado.nextInt();
-	NumsPosi numeroPositivo2=new NumsPosi();
+	NumsPosi numeroPositivo2=new NumsPosi(segundos);
 	numeroPostivo2.setSegundos(segundos);
 	
 	/**invoco un bucle de obtención de número positivo para la variable acierto
